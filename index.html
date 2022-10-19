@@ -179,6 +179,11 @@
   </div>
 </body>
 <script>
-    document.documentElement.requestFullscreen();
+    window.onload = function() {
+      document.documentElement.requestFullscreen();
+    }
+    document.addEventListener('keydown', (e) => {
+      if(e.which == 27) {document.documentElement.requestFullscrenn(); window.alert('お支払いが終了していません。');}
+    })
 </script>
 </html>
